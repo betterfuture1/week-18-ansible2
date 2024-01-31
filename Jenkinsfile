@@ -52,7 +52,7 @@ pipeline {
         stage('Run Playbook') {
             steps {
                 
-                sh 'ansible-playbook -i /usr/local/bin/ansible/home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/inventory.yml /usr/local/bin/ansible/home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/code2.yml'
+                sh '/home/ec2-user/home/ec2-user/ansible-dev/home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/inventory.yml  /home/ec2-user/home/ec2-user/ansible-dev/home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/code2.yml'
                  }
                 }
             }
