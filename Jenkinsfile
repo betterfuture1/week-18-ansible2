@@ -10,7 +10,7 @@ pipeline {
 
         stage('Package Ansible Code') {
             steps {
-                sh 'zip -r ansible-code.zip -x Jenkinsfile'
+                sh 'zip -r ansible-code.zip week-18-ansible2-x Jenkinsfile'
             }
         }
 
