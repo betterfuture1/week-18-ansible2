@@ -10,7 +10,7 @@ pipeline {
 
         stage('Package Ansible Code') {
             steps {
-                sh 'zip -r ansible-code.zip week18-ansible-windoews-x Jenkinsfile'
+                sh 'zip -r ansible-code.zip -x Jenkinsfile'
             }
         }
 
@@ -52,7 +52,7 @@ pipeline {
         stage('Run Playbook') {
             steps {
                 script {
-                    dir ('ansibles-codes'){
+                    dir ('ansible-code'){
                 
                 sh 'ansible-playbook -i /home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/inventory.yml /home/ec2-user/ansible-dev/workspace/Devops/ansible-pipeline/code2.yml'
                  }
